@@ -2,28 +2,27 @@
 
 ## Overview
 
-Student Expense Manager is a simple Python-based application designed to help students manage and track their daily expenses and budget.
+Student Expense Manager is a Python-based command-line application designed to help students manage their daily expenses and budget.
 
-The application allows users to add expenses, view saved expenses, set a budget, search for expenses, and generate a basic expense report.
+The project allows users to add and view expenses, set a budget, search for expenses, generate expense reports, validate input, and store expense data in a CSV file.
 
 ## Features
 
 * Add new expenses
-* View all expenses
+* View all saved expenses
 * Search expenses by name
-* Set a personal budget
+* Set a student budget
 * Calculate total expenses
-* Display remaining budget
-* Show budget warning when expenses exceed the budget
-* Save expenses in a CSV file
-* Load saved expenses when the program starts
+* Show remaining budget
+* Display a warning when the budget is exceeded
 * Validate user input
+* Store expense data in a CSV file
 * Automated testing using Python unittest
 
-## Technologies Used
+## Technologies
 
-* Python
-* CSV
+* Python 3
+* CSV file handling
 * Python unittest
 * Visual Studio Code
 * GitHub
@@ -40,43 +39,60 @@ Student-Expense-Manager/
 ├── storage.py
 ├── validation.py
 ├── utils.py
-├── README.md
-│
 ├── data/
 │   └── expenses.csv
-│
-└── tests/
-    ├── __init__.py
-    └── test_project.py
+├── tests/
+│   ├── test_project.py
+│   └── __init__.py
+├── README.md
+└── statement.md
 ```
 
-## How to Run
+## Setup and Installation
 
-### Step 1: Install Python
+### 1. Environment Setup
 
-Make sure Python is installed on your computer.
+Install Python 3.x on your computer.
 
-Check the Python version using:
+To check whether Python is installed, open Command Prompt or PowerShell and run:
 
-```bash
+```text
 python --version
 ```
 
-### Step 2: Open the Project
+The project was developed and tested using Python 3.
 
-Open the `Student-Expense-Manager` folder in Visual Studio Code.
+### 2. Get the Project
 
-### Step 3: Run the Application
+Download or clone the GitHub repository to your computer.
 
-Open the terminal in the project folder and run:
+Open the project folder in Visual Studio Code or another Python-supported editor.
 
-```bash
+### 3. Dependency Installation
+
+This project uses only Python standard library modules.
+
+No external Python packages are required, so there is no `pip install` command needed.
+
+### 4. Configuration
+
+No additional configuration or API keys are required.
+
+The application automatically uses the `data/expenses.csv` file for storing expense information.
+
+### 5. Run the Project
+
+Open a terminal in the project folder and run:
+
+```text
 python Main.py
 ```
 
-### Step 4: Use the Menu
+The main menu will appear in the terminal.
 
-The application provides the following options:
+## How to Use
+
+After starting the program, the user can select:
 
 1. Add Expense
 2. View Expenses
@@ -85,45 +101,37 @@ The application provides the following options:
 5. Search Expenses
 6. Exit
 
-## Data Storage
-
-Expense records are stored in:
-
-```text
-data/expenses.csv
-```
-
-The application automatically saves expenses to the CSV file and loads them when the program starts.
+Follow the instructions displayed in the terminal.
 
 ## Testing
 
-The project contains automated tests using Python's `unittest` framework.
+The project includes unit tests using Python's built-in `unittest` framework.
 
-Run the tests using:
+To run the tests:
 
-```bash
+```text
 python -m unittest discover -s tests
 ```
 
-The project currently contains three tests covering:
+Expected result:
 
-* Total expense calculation
-* Remaining budget calculation
-* Empty expense list handling
-
-All three tests should pass successfully.
+```text
+Ran 3 tests
+OK
+```
 
 ## Future Enhancements
 
-Some possible future improvements are:
+* Monthly expense summaries
+* Category-wise expense analysis
+* Graphical user interface
+* Export reports to PDF
+* More advanced filtering options
+* Improved budget tracking
 
-* Add expense date
-* Add monthly expense summaries
-* Add category-wise reports
-* Add graphical charts
-* Store budget information permanently
-* Add edit and delete expense options
-* Add a graphical user interface
+## Project Statement
+
+The detailed problem statement, scope, target users, and high-level features are available in `statement.md`.
 
 ## Author
 
